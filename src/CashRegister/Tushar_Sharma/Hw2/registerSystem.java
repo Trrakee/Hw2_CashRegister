@@ -13,7 +13,6 @@ public class registerSystem implements Item {
         costBeforeDiscount = price;
         return costBeforeDiscount;
     }
-
     @Override
     public int getQuantity(int quantity) {
         numOfItems = quantity;
