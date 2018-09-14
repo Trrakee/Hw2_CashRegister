@@ -9,7 +9,7 @@ public class Test_CashRegister {
         Item testItem = new registerSystem();
         testItem.getPrice(300);
         testItem.getQuantity(3);
-        testItem.applyDiscount(4);
+        testItem.applyDiscount(input);
         testItem.displayData();
     }
 

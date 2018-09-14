@@ -1,7 +1,7 @@
 package CashRegister.Tushar_Sharma.Hw2;
 public interface Item {
-    float getPrice(float price);
+    double getPrice(double price);
     int getQuantity(int quantity);
-    float applyDiscount(int discountChosen);
+    double applyDiscount(int discountChosen);
     void displayData();
 }

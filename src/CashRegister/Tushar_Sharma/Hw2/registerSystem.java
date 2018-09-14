@@ -2,14 +2,15 @@ package CashRegister.Tushar_Sharma.Hw2;
 
 public class registerSystem implements Item {
 
-    private float costBeforeDiscount;
+    private double costBeforeDiscount;
     private int totalPrice;
     private int numOfItems;
     private int totalQuantity;
     private int discountToApply;
-    private float costAfterDiscount;
+    private double costAfterDiscount;
+    private double discountCalculated;
     @Override
-    public float getPrice(float price) {
+    public double getPrice(double price) {
         costBeforeDiscount = price;
         return costBeforeDiscount;
     }
@@ -20,10 +21,12 @@ public class registerSystem implements Item {
     }
 
     @Override
-    public float applyDiscount(int discountChosen) {
+    public double applyDiscount(int discountChosen) {
         switch (discountChosen) {
             case 1:
                 discountToApply = 10; // %10 off
+                discountCalculated = costBeforeDiscount *0.1;
+                costAfterDiscount = costBeforeDiscount - discountCalculated;
                 break;
             case 2:
                 discountToApply = 20; // %20 off
@@ -47,7 +50,7 @@ public class registerSystem implements Item {
                 discountToApply = 25; // Senior Citizen Discount %25 off
                 break;
         }
-        return costAfterDiscount = costBeforeDiscount * discountChosen;
+        return costAfterDiscount;
     }
 
     @Override
