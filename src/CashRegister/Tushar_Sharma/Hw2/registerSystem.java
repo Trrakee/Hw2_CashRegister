@@ -1,4 +1,5 @@
 package CashRegister.Tushar_Sharma.Hw2;
+
 public class registerSystem implements Item {
     /**
      * Variables.
@@ -11,8 +12,7 @@ public class registerSystem implements Item {
     private double totalDiscount;
 
     /**
-     * @param price
-     * @return costBeforeDiscount aka the cost before the discount is applied.
+     * @param price = the cost of the item
      */
     @Override
     public void getPrice(double price) {
@@ -20,8 +20,7 @@ public class registerSystem implements Item {
     }
 
     /**
-     * @param quantity
-     * @return numOfItems aka the item of items.
+     * @param quantity = the amount of items the user is inputting
      */
     @Override
     public void getQuantity(int quantity) {

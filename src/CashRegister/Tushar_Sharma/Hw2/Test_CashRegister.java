@@ -1,10 +1,16 @@
 package CashRegister.Tushar_Sharma.Hw2;
+
 import java.util.Scanner;
 
 /**
  * Test class to implement methods and the item interface.
  */
 public class Test_CashRegister {
+    /**
+     * Main method of the test class.
+     *
+     * @param args command line arguments
+     */
     public static void main(String[] args) {
         boolean shopping = true;
         Item testItem = new registerSystem(); // create a register system

@@ -4,21 +4,20 @@ package CashRegister.Tushar_Sharma.Hw2;
  */
 public interface Item {
     /**
-     * @param price
-     * @return the cost
+     * @param price the cost
      */
     void getPrice(double price);
 
     /**
-     * @param quantity
-     * @return quantity of items
+     * @param quantity = the amount of items the user is inputting
+     *
      */
     void getQuantity(int quantity);
 
     /**
      * applies selected discount to the cost.
      *
-     * @param discountChosen
+     * @param discountChosen = the discount chose by the user
      */
     void applyDiscount(int discountChosen);
 
